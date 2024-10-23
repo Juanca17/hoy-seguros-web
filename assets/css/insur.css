@@ -434,7 +434,7 @@ ul {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-image: url(../images/loader.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
@@ -30510,7 +30510,7 @@ ul li ul .is-new-menu > a > span::after {
 .brand-section {
   position: relative;
   background-color: var(--insur-black);
-  padding: 120px 0 314px;
+  padding: 120px 0 350px; 
 }
 @media (max-width: 767px) {
   .brand-section {
@@ -30521,9 +30521,14 @@ ul li ul .is-new-menu > a > span::after {
   position: relative;
 }
 .brand-section__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  height: 150px;
 }
 .brand-section__image img {
+  max-height: 125px;
   width: auto !important;
   max-width: 100%;
   transition: all ease 0.4s;
@@ -30538,16 +30543,23 @@ ul li ul .is-new-menu > a > span::after {
 --------------------------------------------------------------*/
 .feature-seven {
   position: relative;
-  margin-top: -160px;
+  margin-top: -250px;
+  margin-bottom: 54px;
   align-items: center;
 }
+.services-headline-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .feature-seven__single {
+  width: 200px;
   position: relative;
   background-color: var(--insur-white);
   border: 1px solid var(--insur-bdr-color);
   border-radius: 20px;
   box-shadow: 13px 4px 30px 0px rgba(0, 0, 0, 0.1);
-  padding: 39px 38px 30px;
+  padding: 39px 10px 30px;
+  margin: 15px 10px;
 }
 @media (max-width: 767px) {
   .feature-seven__single {
@@ -30560,12 +30572,22 @@ ul li ul .is-new-menu > a > span::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid rgba(var(--insur-base-rgb), 0.2);
+  border: 3px solid var(--insur-white);
   border-radius: 50%;
   font-size: 50px;
   color: var(--insur-base);
   margin: 0 0 32px;
   transition: all 0.4s ease;
+  background: #041925;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+
+}
+.feature-seven__single__icon img {
+  max-height: 60px;
+  width: auto !important;
+  max-width: 100%;
 }
 .feature-seven__single__icon span {
   display: inline-block;
@@ -30573,15 +30595,17 @@ ul li ul .is-new-menu > a > span::after {
   transform: scale(1);
 }
 .feature-seven__single:hover .feature-seven__single__icon {
-  border-color: var(--insur-base);
+  border-color: #DCFC8D;
 }
 .feature-seven__single:hover .feature-seven__single__icon span {
   transform: scale(0.9);
 }
 .feature-seven__single__title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  margin: 0 0 14px;
+  margin: 50px 0 14px;
+  text-align: center;
+  pointer-events: none;
 }
 .feature-seven__single__title a {
   color: inherit;
@@ -31470,7 +31494,7 @@ ul li ul .is-new-menu > a > span::after {
   transform: rotateY(180deg);
 }
 .services-eight__single__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   margin: 0 0 0;
   position: relative;
@@ -31651,18 +31675,21 @@ ul li ul .is-new-menu > a > span::after {
 # CTA
 --------------------------------------------------------------*/
 .cta-seven {
-  position: relative;
-  margin-top: -86px;
-  padding-bottom: 120px;
+  position: absolute;
+  left: 0;
+  bottom: 614px;
+  width: 100%;
+  z-index: 2;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .cta-seven {
-    padding-bottom: 80px;
+    display: none;
   }
 }
 .cta-seven__inner {
   position: relative;
-  background-color: var(--insur-base);
+  background-color: #18458E;
+  border: 2px solid var(--insur-white);
   border-radius: 10px;
   padding: 0 58px;
 }
@@ -33865,6 +33892,7 @@ ul li ul .is-new-menu > a > span::after {
 .site-footer-five {
   position: relative;
   background-color: var(--insur-black);
+  padding-top: 44px;
 }
 .site-footer-five__shape-one {
   position: absolute;
