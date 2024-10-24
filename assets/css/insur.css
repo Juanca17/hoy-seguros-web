@@ -110,6 +110,13 @@ ul {
   margin-bottom: 0;
 }
 
+.bold {
+  font-weight: 800;
+}
+.thin {
+  font-weight: 100;
+}
+
 .list-unstyled {
   padding-left: 0;
 }
@@ -29139,7 +29146,6 @@ ul li ul .is-new-menu > a > span::after {
   font-size: 40px;
   line-height: 48px;
   color: var(--insur-black);
-  font-weight: 800;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -30073,9 +30079,8 @@ ul li ul .is-new-menu > a > span::after {
   overflow: hidden;
 }
 .main-slider-eight__title {
-  font-weight: 800;
-  font-size: 70px;
-  line-height: 80px;
+  font-size: 65px;
+  line-height: 70px;
   letter-spacing: -2px;
   margin: 0 0 17px;
   opacity: 0;
@@ -30108,7 +30113,6 @@ ul li ul .is-new-menu > a > span::after {
 .main-slider-eight__text {
   color: rgba(var(--insur-gray-rgb), 0.7);
   font-size: 18px;
-  font-weight: 700;
   line-height: 30px;
   margin-bottom: 40px;
   opacity: 0;
@@ -31771,7 +31775,6 @@ ul li ul .is-new-menu > a > span::after {
 .cta-seven__sub-title {
   font-size: 14px;
   color: var(--insur-bdr-color);
-  font-weight: 700;
   margin: 0 0 3px;
 }
 .cta-seven__title {
@@ -33972,8 +33975,11 @@ ul li ul .is-new-menu > a > span::after {
   padding: 130px 0 100px;
 }
 @media (max-width: 991px) {
+  .site-footer-five {
+    padding-top: 0px;
+  }
   .site-footer-five__top {
-    padding: 50px 0 80px;
+    padding: 0px 0 80px;
   }
 }
 .site-footer-five__column {
