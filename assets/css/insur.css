@@ -29645,8 +29645,8 @@ ul li ul .is-new-menu > a > span::after {
 .main-menu-eight__call {
   position: relative;
   min-height: 40px;
-  padding: 8px 0 0 51px;
-  margin-left: 85px;
+  padding: 13px 0 0 51px;
+  width: 180px;
 }
 @media (max-width: 767px) {
   .main-menu-eight__call {
@@ -29664,16 +29664,45 @@ ul li ul .is-new-menu > a > span::after {
   color: var(--insur-white);
   font-size: 16px;
   position: absolute;
-  left: 0;
+  left: -20px;
   top: 0;
   bottom: 0;
   margin: auto;
+}
+.main-menu-eight__call__mail {
+  width: 40px;
+  height: 40px;
+  background-color: var(--insur-base);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--insur-white);
+  font-size: 16px;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.main-menu-eight__call__icon a {
+  color: var(--insur-white);
+}
+.main-menu-eight__call__mail a {
+  color: var(--insur-white);
 }
 .main-menu-eight__call__icon i {
   display: inline-block;
   transition: all 600ms ease;
 }
-.main-menu-eight__call:hover .main-menu-eight__call__icon i {
+.main-menu-eight__call__mail i {
+  display: inline-block;
+  transition: all 600ms ease;
+}
+.main-menu-eight__call__icon:hover i {
+  transform: scaleX(-1);
+}
+.main-menu-eight__call__mail:hover i {
   transform: scaleX(-1);
 }
 .main-menu-eight__call__title {
@@ -29683,6 +29712,7 @@ ul li ul .is-new-menu > a > span::after {
   font-size: 12px;
   font-weight: 700;
   color: var(--insur-gray);
+  margin-left: 30px;
 }
 .main-menu-eight__call__text {
   color: var(--insur-black);
@@ -34115,6 +34145,11 @@ ul li ul .is-new-menu > a > span::after {
   display: flex;
   align-items: center;
   gap: 11px;
+}
+@media (max-width: 1200px) {
+  .site-footer-five__contact__list li {
+    padding: 0 10px;
+  }
 }
 .site-footer-five__contact__list li:hover .site-footer-five__contact__icon {
   color: var(--insur-white);
