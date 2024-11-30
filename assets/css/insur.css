@@ -31,6 +31,7 @@
   --insur-primary-rgb: 12, 224, 255;
   --insur-extra: #f2f5f9;
   --insur-extra-rgb: 242, 245, 249;
+  --insur-extra-alt: #f8f8f8;
   --insur-bdr-color: #e0e4e8;
   --insur-bdr-color-rgb: 224, 228, 232;
   --insur-bdr-radius: 10px;
@@ -29129,7 +29130,7 @@ ul li ul .is-new-menu > a > span::after {
 }
 .section-title-six__tagline {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--insur-gray);
   font-weight: 700;
   line-height: 1;
@@ -29138,7 +29139,7 @@ ul li ul .is-new-menu > a > span::after {
 }
 .section-title-six__tagline__icon {
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--insur-base);
   margin-right: 4px;
 }
@@ -29147,6 +29148,10 @@ ul li ul .is-new-menu > a > span::after {
   line-height: 48px;
   color: var(--insur-black);
   margin: 0;
+}
+.section-title-six-xl {
+  font-size: 52px;
+  line-height: 60px;
 }
 @media (max-width: 767px) {
   .section-title-six__title {
@@ -30548,6 +30553,12 @@ ul li ul .is-new-menu > a > span::after {
   background-color: var(--insur-black);
   padding: 120px 0 350px; 
 }
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 @media (max-width: 767px) {
   .brand-section {
     padding: 80px 0 240px;
@@ -30839,15 +30850,33 @@ ul li ul .is-new-menu > a > span::after {
 }
 
 /*--------------------------------------------------------------
+# About Use
+--------------------------------------------------------------*/
+.about-us {
+  background: var(--insur-black);
+  position: relative;
+  padding: 120px 0 350px; 
+}
+.about-us__wrapper {
+  display: flex;
+}
+
+
+/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .container-fullwidth {
   max-width: 100%;
-  padding: 0px 5vw;
+  padding: 0px 7vw;
 }
 .about-nine {
   position: relative;
   padding: 40px 0 120px;
+  background: var(--insur-extra-alt);
+  background-image: url(../../assets/images/update-15-2-2024/shapes/get-insurance-shape-two.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 1199px) {
   .about-nine {
@@ -30856,7 +30885,7 @@ ul li ul .is-new-menu > a > span::after {
 }
 @media (max-width: 767px) {
   .about-nine {
-    padding: 80px 0;
+    padding: 0px 0;
   }
 }
 .about-nine__image {
@@ -30933,7 +30962,7 @@ ul li ul .is-new-menu > a > span::after {
   width: 200%;
   padding: 80px 70px;
   max-width: 300px;
-  background: var(--insur-black);
+  background: var(--insur-secondary);
 }
 @media (max-width: 767px) {
   .about-nine__experience {
@@ -30981,6 +31010,7 @@ ul li ul .is-new-menu > a > span::after {
   margin-bottom: 13px;
 }
 .about-nine__content__text {
+  font-size: 20px;
   line-height: 30px;
   font-weight: 600;
   margin: 0 0 30px;
@@ -31049,11 +31079,12 @@ ul li ul .is-new-menu > a > span::after {
   transform: scale(1);
 }
 .about-nine__box__title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   margin: 0;
 }
 .about-nine__box__text {
+  font-size: 20px;
   line-height: 30px;
   font-weight: 600;
   margin: 0;
@@ -31361,8 +31392,8 @@ ul li ul .is-new-menu > a > span::after {
 --------------------------------------------------------------*/
 .services-eight {
   position: relative;
-  background-color: var(--insur-extra);
-  padding: 120px 0 245px;
+  background-color: var(--insur-white);
+  padding: 20px 0 100px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31767,7 +31798,7 @@ ul li ul .is-new-menu > a > span::after {
 }
 .cta-seven__inner {
   position: relative;
-  background-color: #18458E;
+  background-color: var(--insur-secondary);
   border: 2px solid var(--insur-white);
   border-radius: 10px;
   padding: 0 58px;
@@ -34060,7 +34091,7 @@ ul li ul .is-new-menu > a > span::after {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  margin: 0 0 22px;
+  margin: 42px 0 22px;
 }
 .site-footer-five__about__form {
   position: relative;
@@ -34111,12 +34142,12 @@ ul li ul .is-new-menu > a > span::after {
   margin: 30px 0 0;
 }
 .site-footer-five__about__social a {
-  width: 36px;
-  height: 36px;
+  width: 66px;
+  height: 66px;
   background-color: rgba(142, 143, 155, 0.15);
   border-radius: 50%;
   color: var(--insur-white);
-  font-size: 12px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34210,7 +34241,7 @@ ul li ul .is-new-menu > a > span::after {
   transition: all 500ms ease;
 }
 .site-footer-five__contact__text {
-  color: var(--insur-gray);
+  color: var(--insur-white);
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
