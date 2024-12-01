@@ -30856,11 +30856,56 @@ ul li ul .is-new-menu > a > span::after {
   background: var(--insur-black);
   position: relative;
   padding: 120px 0 350px; 
+  color: var(--insur-white);
 }
-.about-us__wrapper {
+.about-us__left {
+  border-right: 1px solid var(--insur-extra);
+  padding: 40px;
+  
+}
+.about-us__right {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.about-us__mision {
+  margin-bottom: 50px;
+}
+.about-us__title {
+  font-family: var(--insur-reey-font);
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--insur-white);
+  margin: 0;
+}
+.about-us__text {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 100;
+}
+.about-us__mision-text {
+  margin-top: 60px;
+}
+.about-us__vision-text {
+  margin-top: 20px;
+}
+.about-us__valores ul {
+  margin-top: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.about-us__valores li {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.about-us_number {
+  font-family: var(--insur-reey-font);
+  font-weight: 600;
+  margin-right: 10px;
+} 
 
 /*--------------------------------------------------------------
 # About
