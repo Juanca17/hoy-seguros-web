@@ -30561,7 +30561,8 @@ ul li ul .is-new-menu > a > span::after {
 }
 @media (max-width: 767px) {
   .brand-section {
-    padding: 80px 0 240px;
+    padding: 80px 0 80px;
+    border-bottom: 1px solid var(--insur-gray);
   }
 }
 .brand-section__carousel_mobile {
@@ -30861,15 +30862,32 @@ ul li ul .is-new-menu > a > span::after {
 .about-us__left {
   border-right: 1px solid var(--insur-extra);
   padding: 40px;
-  
+}
+@media (max-width: 1199px) {
+  .about-us__left {
+    border-right: none;
+  }
 }
 .about-us__right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1199px) {
+  .about-us__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px;
+  }
+}
 .about-us__mision {
   margin-bottom: 50px;
+}
+@media (max-width: 1199px) {
+  .about-us__mision {
+    margin-bottom: 80px;
+  }
 }
 .about-us__title {
   font-family: var(--insur-reey-font);
@@ -34246,7 +34264,7 @@ ul li ul .is-new-menu > a > span::after {
 }
 @media (max-width: 1200px) {
   .site-footer-five__contact__list li {
-    padding: 0 10px;
+    padding: 0 53px;
   }
 }
 .site-footer-five__contact__list li:hover .site-footer-five__contact__icon {
